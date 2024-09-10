@@ -3,7 +3,7 @@ remove_subject() {
     echo "Please selectr the subject/project you want to delete: "
     read subject
     if [ -d "$Home/personal_organiser/$subject" ]; then
-        echo "Are you sure you want to delete the subject $subject and all its contents?"
+        echo "Are you sure you want to delete the subject $subject and all its contents? (Y/N)"
         read confirmation
 
         if ["$confirmation" == "y" ]; then
